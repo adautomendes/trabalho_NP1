@@ -17,6 +17,8 @@
   },
   "homepage": "",
   "dependencies": {
-    "restify": "^8.5.1"
+    "mysql2": "^2.2.5",
+    "restify": "^8.5.1",
+    "sequelize": "^6.3.5"
   }
 }
