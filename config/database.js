@@ -1,12 +1,9 @@
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize('eb19_2020_2', 'root', 'safra',{
+const sequelize = new Sequelize('eb019_2020_2', 'root', 'root',{
     host:"localhost",
     port:3306,
-    dialect:'mysql',
-    define:{
-        timestaps:false
-    }
+    dialect:'mysql'
 });
 
 module.exports = sequelize;

@@ -8,14 +8,6 @@ server.use(restify.plugins.bodyParser({
     overrideParams:false
 }));
 
-server.get('/', (request, response, next) => {
-    const retorno = {retorno:'restify ok'};
-    response.send(200, retorno);
-    next();
-});
+server.use(restify.plugins.queryParser());
 
-server.listen(port, () => {
-    console.log( 'restify executando na porta:${port}');
-});
-
-module.exports = server;
+module.exports = {server, port};
